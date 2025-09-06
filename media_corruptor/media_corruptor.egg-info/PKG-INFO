@@ -1,0 +1,64 @@
+Metadata-Version: 2.4
+Name: media-corruptor
+Version: 0.1.0
+Summary: A tool to partially corrupt media files (video/audio)
+Home-page: https://github.com/yourusername/media-corruptor
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# Media Corruptor
+
+一个用于部分损坏媒体文件（视频/音频）的工具，使其仍可播放但会出现错误。
+
+## 安装
+
+```bash
+pip install .
+
+或者直接安装：
+
+```bash
+python setup.py install
+
+使用方法
+
+命令行使用
+```bash
+# 基本用法
+corrupt-media "input.mp4"
+
+# 指定输出文件
+corrupt-media "input.mp4" -o "corrupted.mp4"
+
+# 指定损坏级别
+corrupt-media "input.mp4" -l 0.05
+
+Python代码中使用
+
+```python
+from media_corruptor import corrupt_media_file
+
+# 损坏文件
+result = corrupt_media_file("input.mp4", "output_corrupted.mp4", 0.02)
+if result:
+    print(f"成功创建损坏文件: {result}")
+
+参数说明
+input: 输入文件路径（必需）
+
+-o, --output: 输出文件路径（可选，默认在原文件名后加"_corrupted"）
+
+-l, --level: 损坏程度（0.001-0.1，默认0.01）

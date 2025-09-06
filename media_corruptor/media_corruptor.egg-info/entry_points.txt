@@ -1,0 +1,2 @@
+[console_scripts]
+corrupt-media = media_corruptor.__main__:main

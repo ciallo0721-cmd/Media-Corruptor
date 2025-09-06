@@ -1,0 +1,10 @@
+README.md
+setup.py
+media_corruptor/__init__.py
+media_corruptor/__main__.py
+media_corruptor/corruptor.py
+media_corruptor.egg-info/PKG-INFO
+media_corruptor.egg-info/SOURCES.txt
+media_corruptor.egg-info/dependency_links.txt
+media_corruptor.egg-info/entry_points.txt
+media_corruptor.egg-info/top_level.txt
